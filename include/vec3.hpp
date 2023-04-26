@@ -1,11 +1,13 @@
 #pragma once
 
-#include <stdio.h>
 #include <stddef.h>
 
 typedef struct{
     double elements[3];
 } Vec3;
+
+typedef Vec3 Point3;
+typedef Vec3 Color;
 
 Vec3 negate(const Vec3 vector);
 
@@ -27,8 +29,4 @@ double vec3_length(const Vec3 vector);
 double vec3_length_squared(const Vec3 vector);
 Vec3 vec3_unit_vector(const Vec3 vector);
 
-typedef Vec3 Point3;
-typedef Vec3 Color;
-
-void vec3_print(FILE *output, Vec3 vector);
 Vec3 multiply_double_vec3(const double times, const Vec3 vector);
