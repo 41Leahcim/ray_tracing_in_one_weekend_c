@@ -1,5 +1,5 @@
 src = $(wildcard src/*.c)
-flags = -Wall -Wextra -fanalyzer -Os
+flags = -Wall -Wextra -fanalyzer -Os -lm
 includes = -I include
 
 app: $(src)
